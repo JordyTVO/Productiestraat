@@ -1,17 +1,100 @@
 /* STYLE SHEET CVA */
 
+:root {
+    --primary-color: #4A7FBF;
+    --secondary-color: #F76C5E;
+    }
+
 body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F0F4FA;
     color: #696969;
     font-size: 15px;
     line-height: 24px;
     padding: 0;
+    margin: 0;
 }
 
 .container{
     width: 1240px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
 }
 
 
+/* ## Nav bar ## */
+#navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ## topbar ## */
+#navbar .topbar{
+    background-color: var(--primary-color);
+    color: #FFF;
+    display: flex;
+    height: 40px;
+}
+
+#navbar .topbar a{
+    color: #FFF;
+}
+
+#navbar .right-content{
+    margin-left:auto;
+}
+
+.topbar-phone, .topbar-mail{
+    height: 40px;
+}
+
+.topbar-phone a, .topbar-mail a{
+    margin-right: 5px;
+}
+
+.topbar i{
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 40px;;
+}
+
+
+/* ## MAIN MENU ## */
+.main-menu{
+    background-color: #FFF;
+    display: flex;
+    height: 80px;
+}
+
+.main-menu .logo  .text-logo{
+    display:flex;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--secondary-color);
+}
+
+.menu-main-menu{
+    display: flex;
+    margin-left: auto;
+}
+
+.menu-main-menu ul{
+    float: left; 
+    list-style: none;
+}
+
+.menu-main-menu ul li{
+    display:flex;
+    float:left;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu-main-menu ul li a{
+    color: var(--primary-color);
+}
