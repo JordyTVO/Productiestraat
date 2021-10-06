@@ -24,6 +24,9 @@ a{
     text-decoration: none;
 }
 
+.secondary-color{
+    color: var(--secondary-color);
+}
 
 /* ## Nav bar ## */
 #navbar .container{
@@ -97,4 +100,48 @@ a{
 
 .menu-main-menu ul li a{
     color: var(--primary-color);
+}
+
+
+/* ## Banner ## */
+
+#banner{
+    width: 100%;
+    height: 500px;
+    padding:0;
+    margin: 0;
+    color:#FFF;
+    background-color: #94aabb;
+    display: flex;   
+}
+
+#banner .container{
+    display: flex;
+    align-items: center;
+}
+
+#banner .text-banner {
+    flex: 10%;
+}
+
+#banner .text-banner h2{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+#banner .text-banner p{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
+
+}
+
+#banner .image-banner{
+    flex: auto;
+    text-align: center;
+}
+
+#banner img {
+    width: 500px;
+    height: auto;
 }
