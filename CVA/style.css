@@ -28,6 +28,15 @@ a{
     color: var(--secondary-color);
 }
 
+.strong{
+    font-weight: bold;
+}
+
+h2{
+    color: var(--primary-color);
+}
+
+
 /* ## Nav bar ## */
 #navbar .container{
     display: flex;
@@ -121,12 +130,13 @@ a{
 }
 
 #banner .text-banner {
-    flex: 10%;
+    flex: 20%;
 }
 
 #banner .text-banner h2{
     font-size: 2rem;
     line-height: 2rem;
+    margin-bottom: 0;
 }
 
 #banner .text-banner p{
@@ -138,10 +148,12 @@ a{
 
 #banner .image-banner{
     flex: auto;
-    text-align: center;
+    text-align: end;
 }
 
 #banner img {
-    width: 500px;
+    width: 800px;
     height: auto;
 }
+
+
