@@ -36,6 +36,34 @@ h2{
     color: var(--primary-color);
 }
 
+ul{
+    padding-left:0px;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 14px;
+}
+
+li:last-child{
+    margin-bottom:0px;
+}
+
+.fa-phone-alt{
+    color: #fff!important;
+}
+
+.fa-check-circle{
+    color: var(--primary-color)!important;
+}
+
+.fas {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    font-size:1.2rem;
+    line-height: 1.2rem;
+}
+
 
 /* ## Nav bar ## */
 #navbar .container{
@@ -168,6 +196,11 @@ section{
     justify-content: space-evenly;
 }
 
+#introduction{
+    margin-top:1rem;
+    margin-bottom: 4rem;
+}
+
 #voordelen .row{
     align-items: center;
 }
@@ -182,11 +215,14 @@ section{
     flex-direction: column;
 }
 
-.text-column h2, .text-column ul{
+.text-column ul{
     margin-top: .1rem;
     margin-bottom: .1rem;
 }
 
+.text-column h2{
+    margin-bottom: 1rem;
+}
 
 /* ## TABS ## */
 
@@ -206,18 +242,21 @@ section{
 
 }
 
-#inhoud .tab-navbar a {
+#inhoud .tab-navbar button {
     display:flex; 
     padding: 2rem;
     color: #8f8e8e;
     font-size:1rem;
+    border: 0px;
+    background:none;
 }
 
-#inhoud .tab-navbar a:hover{
+#inhoud .tab-navbar button:hover{
     color:#3d3d3d;
+    cursor: pointer;
 }
 
-#inhoud .tab-navbar a:active{
+#inhoud .tab-navbar button:active{
     border-bottom: 2px #696969 solid;
 }
 
@@ -255,7 +294,7 @@ section{
 .button {
     background-color: var(--primary-color);
     color: #FFF;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 0.6rem 1.8rem;
     display:inline-flex;
     cursor: pointer;
@@ -272,6 +311,7 @@ section{
 #informatie {
     background-color: var(--primary-color);
     color: #FFF;
+    border-radius: 10px;
 }
 
 #informatie .row{
@@ -282,17 +322,67 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 #informatie .row .columns.fullwidth{
     flex-grow: 1;
     justify-content: center;
     margin-bottom:0;
-    font-size:1.5rem;
+    
 }
 
 #informatie h2{
     color: #FFF;
-    font-size: 1rem;
+    font-size:1.5rem;
+}
+
+#informatie .formulier{
+    width: 70%;
+}
+
+#informatie .form-row{
+    display: flex;
+}
+
+#informatie input{
+    background-color: #FFF;
+    padding: .8rem .8rem;
+    border: none;
+    border-radius: 5px;
+    margin: .7rem .7rem;
+    flex-grow: 1;
+}
+
+#informatie button{
+    border: 2px solid #FFF;
+    color: #FFF;
+    border-radius: 5px;
+    background: none;
+    padding: .6rem 1rem;
+    margin: .7rem .7rem;
+    -webkit-appearance: none;
+    transition: all .2s ease-in-out;
+    
+}
+
+#informatie button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ### TVOsolutions ### */
+#tvosolutions .row{
+    flex-direction: column;
+}
+
+#tvosolutions .row .columns {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+#tvosolutions h2{
+    font-size: 1.5rem;
+    text-align: center;
 }
