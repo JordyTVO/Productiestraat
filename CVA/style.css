@@ -6,13 +6,16 @@
     }
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #F0F4FA;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",sans-serif;
+    overflow-x: hidden;
+    font-weight: normal;
     color: #696969;
     font-size: 15px;
     line-height: 24px;
-    padding: 0;
-    margin: 0;
+
 }
 
 .container{
@@ -32,12 +35,24 @@ a{
     font-weight: bold;
 }
 
-h2{
+h2, h3{
     color: var(--primary-color);
+    margin: 1rem 0;
+    line-height: 1.3;
+    font-weight: 600;
 }
+
+h2{
+    font-size: 34px;
+}
+
+ h3{
+    font-size: 28px;
+ }
 
 ul{
     padding-left:0px;
+    font-size:17px;
 }
 
 li{
@@ -78,6 +93,10 @@ li:last-child{
     color: #FFF;
     display: flex;
     height: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #navbar .topbar a{
@@ -92,14 +111,18 @@ li:last-child{
     height: 40px;
 }
 
-.topbar-phone a, .topbar-mail a{
-    margin-right: 5px;
+.topbar-phone a {
+    margin-right: 15px;
 }
 
+
+
 .topbar i{
-    margin-right: 10px;
     font-size: 16px;
-    line-height: 40px;;
+    margin-right: 10px;
+    margin-top: 0;
+    line-height: 40px;
+    max-height: 40px;
 }
 
 
@@ -128,15 +151,26 @@ li:last-child{
 }
 
 .menu-main-menu ul li{
-    display:flex;
     float:left;
-    justify-content: space-between;
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+
 }
 
 .menu-main-menu ul li a{
     color: var(--primary-color);
+}
+.menu-main-menu ul li.call-to-action a{
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 13px 34px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 
@@ -144,7 +178,7 @@ li:last-child{
 
 #banner{
     width: 100%;
-    height: 500px;
+    height: 400px;
     padding:0;
     margin: 0;
     color:#FFF;
@@ -181,7 +215,7 @@ li:last-child{
 }
 
 #banner img {
-    width: 800px;
+    width: 500px;
     height: auto;
 }
 
@@ -191,14 +225,13 @@ section{
     margin: 10rem 0;
 }
 
+section:first-child{
+    margin: 2rem 0;
+}
+
 .row{
     display: flex;
     justify-content: space-evenly;
-}
-
-#introduction{
-    margin-top:1rem;
-    margin-bottom: 4rem;
 }
 
 #voordelen .row{
