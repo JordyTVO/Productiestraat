@@ -53,11 +53,17 @@ h2{
 ul{
     padding-left:0px;
     font-size:17px;
+    margin-top: 1.5em;
+    margin-left: 2em !important;
+    list-style-type: none;
+    margin-left: 2.5em;
+
 }
 
 li{
-    list-style-type: none;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    position: relative;
 }
 
 li:last-child{
@@ -72,11 +78,15 @@ li:last-child{
     color: var(--primary-color)!important;
 }
 
-.fas {
+ul .fas {
     color: var(--secondary-color);
     margin-right: 0.5rem;
     font-size:1.2rem;
-    line-height: 1.2rem;
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
 }
 
 
@@ -86,6 +96,7 @@ li:last-child{
     align-items: center;
     justify-content: space-between;
 }
+
 
 /* ## topbar ## */
 #navbar .topbar{
@@ -126,14 +137,25 @@ li:last-child{
 }
 
 
+
+
 /* ## MAIN MENU ## */
-.main-menu{
+#main-menu{
     background-color: #FFF;
     display: flex;
     height: 80px;
 }
 
-.main-menu .logo  .text-logo{
+
+.menu-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 30;
+}
+
+#main-menu .logo  .text-logo{
     display:flex;
     font-size: 40px;
     line-height: 40px;
@@ -259,14 +281,14 @@ section:first-child{
 
 /* ## TABS ## */
 
-#inhoud .row{
+#tabs .row{
     background-color: #FFF;
     border-radius: 10px;
     display:block;
     width: 100%;
 }
 
-#inhoud .tab-navbar ul{
+#tabs .tab-navbar ul{
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -275,29 +297,40 @@ section:first-child{
 
 }
 
-#inhoud .tab-navbar button {
+#tabs .tab-navbar li {
     display:flex; 
     padding: 2rem;
     color: #8f8e8e;
     font-size:1rem;
     border: 0px;
     background:none;
-}
-
-#inhoud .tab-navbar button:hover{
-    color:#3d3d3d;
     cursor: pointer;
 }
 
-#inhoud .tab-navbar button:active{
+#tabs .tab-navbar li:hover{
+    color:#3d3d3d;
     border-bottom: 2px #696969 solid;
 }
 
-#inhoud .tab-content{
+#tabs .tab-navbar li .active{
+    border-bottom: 2px #696969 solid;
+    display:block;
+}
+
+#tabs .tab-content{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
 }
+
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
 
 
 /* ## CVA ## */

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CVA | Kenniscollect.nl</title>
-
+    
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cd0e05f301.js" crossorigin="anonymous"></script>
-
+    <script src="script.js"></script>
 </head>
 <body>
     <nav id="navbar">
@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="main-menu">
+        <div id="main-menu" class="main-menu">
             <div class="container">
                 <div class="logo">
                     <a href="/" class="text-logo"><strong>CVA</strong></a>
@@ -103,19 +103,19 @@
                 </div>
             </div>
         </section>
-        <section id="inhoud">
+        <section id="tabs">
             <div class="row">
                 <div class="tab-navbar">
-                    <ul class="tab-list">
-                        <button class="tab-list-item">Inhoud</button>
-                        <button class="tab-list-item">Voor wie?</button>
-                        <button class="tab-list-item">Extra info</button>
-                        <button class="tab-list-item">Kosten</button>
+                    <ul class="tab-menu">
+                        <li class="tab-menu-item" data-tab-target="#inhoud">Inhoud</li>
+                        <li class="tab-menu-item" data-tab-target="#voor-wie">Voor wie?</li>
+                        <li class="tab-menu-item" data-tab-target="#extra-info">Extra info</li>
+                        <li class="tab-menu-item" data-tab-target="#kosten">Kosten</li>
                     </ul>
                 </div>
-                <div class="tab-content">
-                    <div class="tab-content-inhoud" style="display:block;">
-                        <div class="column">
+                <div class="tab-contents">
+                    <div id="inhoud" class=" active" data-tab-content>
+                        <div class="column tab-content">
                             <p>De kenniscollectie <i>CVA</i> behandelt de volgende onderwerpen:</p>
                             <ul>
                                 <li><i class="fas fa-check-circle"></i>Oorzaken van een CVA;</li>
@@ -130,20 +130,20 @@
                         </div>
                     </div>
 
-                    <div class="tab-content-doelgroep" style="display:none;">
-                        <div class="column">
+                    <div id="voor-wie" data-tab-content>
+                        <div class="column tab-content">
                             <p>Deze kenniscollectie is geschikt voor helpenden (niveau 2) en verzorgenden (niveau 3) die werkzaam zijn in verpleeginstellingen, zorginstellingen of de thuiszorg. Ook stagiaires, mantelzorgers en andere geïnteresseerden kunnen gebruikmaken van de kenniscollectie.</p>
                         </div>
                     </div>
 
-                    <div class="tab-content-extra-info" style="display:none;">
-                        <div class="column">
+                    <div id="extra-info" data-tab-content>
+                        <div class="column tab-content">
                             <p>De kenniscollectie CVA bestaat uit twee onderdelen. De interactieve e-learning zorgt op uitdagende en afwisselende wijze dat jij het ziektebeeld CVA goed leert kennen. Je sluit de cursus af met een eindtoets, waarmee je jouw certificaat kunt behalen. Daarnaast bevat de kenniscollectie ook een speciale kennisapp. Hiermee kun je jouw kennis over een CVA goed op peil houden. Een paar keer per maand stuurt de app een korte kennisvraag over het ziektebeeld naar je smartphone. Heb je de vraag goed? Dan scoor je punten. Heb je de vraag fout? Dan komt de vraag op een later moment terug. Een leuke en gemakkelijke manier om in een paar minuten per week te oefenen met dit belangrijke onderwerp.</p>
                         </div>
                     </div>
 
-                    <div class="tab-content-kosten" style="display:none;">
-                        <div class="column">
+                    <div id="kosten" data-tab-content>
+                        <div class="column tab-content">
                             <p>De kosten voor Kenniscollect zijn afhankelijk van de grootte van de organisatie.  Je koopt een totaalpakket voor de gehele organisatie en mantelzorgers.</p>
                             <ul>
                                 <li><i class="fas fa-check-square"></i>Grote organisaties: >500 medewerkers –> €7200 per jaar</li>
