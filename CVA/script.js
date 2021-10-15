@@ -16,7 +16,7 @@ tabs.forEach(tab => {
 })
 
 
-/*
+
 window.onscroll = function () {scrollFixedHeader()};
 
 var header = document.getElementById("main-menu");
@@ -24,8 +24,8 @@ var fixed = header.offsetTop;
 
 function scrollFixedHeader(){
     if (window.pageYOffset > fixed){
-        header.classList.add("menu-fixed");
+        header.classList.add("fixed");
     } else {
-        header.classList.remove("menu-fixed");
+        header.classList.remove("fixed");
     }
-}*/
+}
