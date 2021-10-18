@@ -15,8 +15,6 @@ tabs.forEach(tab => {
     })
 })
 
-
-
 window.onscroll = function () {scrollFixedHeader()};
 
 var header = document.getElementById("main-menu");
@@ -28,4 +26,14 @@ function scrollFixedHeader(){
     } else {
         header.classList.remove("fixed");
     }
+}
+
+const hamburger = document.querySelector(".menu-item__hamburger");
+const navMenu = document.querySelector(".menu-list__ul");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 }

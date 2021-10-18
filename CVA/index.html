@@ -11,7 +11,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav id="navbar">
+    <header>
+    <nav class="navbar">
         <div class="topbar">
             <div class="container">
                 <div class="left-content">
@@ -39,21 +40,24 @@
         <div id="main-menu" class="main-menu">
             <div class="container">
                 <div class="logo">
-                    <a href="/" class="text-logo"><strong>CVA</strong></a>
+                    <a href="#home" class="text-logo"><strong>CVA</strong></a>
                 </div>
-                <div class="menu-main-menu">
-                    <ul>
-                        <li class="menu-item"><a href="/">Home</a></li>
-                        <li class="menu-item"><a href="#waarom">Waarom</a></li>
-                        <li class="menu-item"><a href="#inhoud">Inhoud</a></li>
-                        <li class="menu-item"><a href="#cva">CVA</a></li>
-                        <li class="menu-item call-to-action"><a href="#informatie">Informatie</a></li>
+                <div class="menu-list">
+                    <ul class="menu-list__ul">
+                        <li class="menu-list__item"><a href="#home">Home</a></li>
+                        <li class="menu-list__item"><a href="#waarom">Waarom</a></li>
+                        <li class="menu-list__item"><a href="#tabs">Inhoud</a></li>
+                        <li class="menu-list__item"><a href="#cva">CVA</a></li>
+                        <li class="menu-list__item call-to-action"><a href="#informatie">Informatie</a></li>
                     </ul>
+                    <div class="menu-item__hamburger">
+                        <a href="javascript:void(0);" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+                     </div>
                 </div>
             </div>
         </div>
     </nav>
-
+    </header>
     <section id="banner" class="banner">
         <div class="container">
             <div class="text-banner">
@@ -61,187 +65,195 @@
                 <p>Afwisselend, effectief en leuk door de e-learning en kennisapp van kenniscollect</p>
             </div>
             <div class="image-banner">
-                <img src="images/App-en-pc2.png" alt="" srcset="" />
+                <img src="images/App-en-pc.png" alt="" srcset="" />
             </div>
         </div>
     </section>
-
-    <div class="container">
-        <section id="home">
-            <div class="row">
-                <div class="column text-column">
-                    <h2>Kenniscollect, kies de leermethode die bij jou past</h2>
-                    <p>Met Kenniscollect kunnen medewerkers op verschillende manieren de kennis over allerlei onderwerpen naar een hoger plan tillen. Onze kenniscollectie bestaat uit diverse thema’s, met elk een e-learning en een kennisapp. Deze zijn gemaakt voor helpenden niveau 2 en verzorgenden niveau 3. Kenniscollect is ook geschikt voor stagiaires en mantelzorgers.</p>
-                    <p>E-learning spreekt voor zich. De kennisapp heeft wellicht wat introductie nodig. Met korte oefenvragen wordt op een leuke, afwisselende en effectieve manier in een paar minuten per week de kennis vergroot en behouden. In ieders eigen tempo, op het moment dat het hen uitkomt.</p>
-                    <p>Het voordeel van Kenniscollect is dat iedere medewerker zelf kan kiezen op welke manier hij of zij wil leren. Via een e-learning of via een app, men kan zelf kiezen welke methode het beste past. Medewerkers zijn hierdoor flexibel en kunnen zelfs per thema een leermethodiek kiezen. Plezier en gemak staan hierbij voorop, wat automatisch leidt tot een goed resultaat.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column text-column">
-                    <h2>Wat leer je met de kenniscollectie CVA?</h2>
-                    <p>Gemiddeld krijgen meer dan honderd mensen per dag te maken met een CVA. Een beroerte kan grote gevolgen hebben voor iemands leven. Hoe sneller zorg kan worden verleend, hoe sneller de schade in de hersenen kan worden beperkt. Daarom is het belangrijk dat jij als zorgverlener in een zorginstelling of de thuiszorg het ziektebeeld kent en snel kunt herkennen.</p>
-                    <p>Met de kenniscollectie CVA leer je alles wat jij moet weten over een beroerte. Je leert hoe een CVA ontstaat en welke risicofactoren er zijn. Je leert aan welke symptomen je een CVA herkent, welke gevolgen een CVA heeft en welke behandelmethodes er zijn. Ook ken je belangrijkste aandachtspunten voor de zorgverlening bij mensen die een CVA hebben doorgemaakt. Zo is jouw kennis over dit ziektebeeld weer helemaal up-to-date.</p>
-                    <p>Via de e-learning of de app vergroot en versterk je de kennis die jij als zorgverlener nodig hebt om de beste zorg voor mensen met een CVA te verlenen.</p>
-                </div>
-            </div>
-        </section>
-        <section id="waarom">
-            <div class="row">
-                <div class="column img-column">
-                    <img src="images/voordelen.png" alt="" srcset="">
-                </div>
-                <div class="column text-column">
-                    <h2>Waarom Kenniscollect</h2>
-                    <ul>
-                        <li><i class="fas fa-check-square"></i>Interactieve en uitdagende scholing;</li>
-                        <li><i class="fas fa-check-square"></i>Oefenvragen en kennisgames tijden de cursus;</li>
-                        <li><i class="fas fa-check-square"></i>Beschikbaar voor niveau 2 en 3;</li>
-                        <li><i class="fas fa-check-square"></i>Sluit aan op de dagelijkse praktijk van jou als zorgverlener;</li>
-                        <li><i class="fas fa-check-square"></i>Combinatie van e-learning én kennis bijhouden via onze speciale leerapp;</li>
-                        <li><i class="fas fa-check-square"></i>Certificaat direct na afronden beschikbaar.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="tabs">
-            <div class="row">
-                <div class="tab-navbar">
-                    <ul class="tab-menu">
-                        <li class="tab-menu-item active" data-tab-target="#inhoud">Inhoud</li>
-                        <li class="tab-menu-item" data-tab-target="#voor-wie">Voor wie?</li>
-                        <li class="tab-menu-item" data-tab-target="#extra-info">Extra info</li>
-                        <li class="tab-menu-item" data-tab-target="#kosten">Kosten</li>
-                    </ul>
-                </div>
-                <div class="tab-contents">
-                    <div id="inhoud" class=" active" data-tab-content>
-                        <div class="column tab-content">
-                            <p>De kenniscollectie <i>CVA</i> behandelt de volgende onderwerpen:</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Oorzaken van een CVA;</li>
-                                <li><i class="fas fa-check-circle"></i>Risicofactoren</li>
-                                <li><i class="fas fa-check-circle"></i>De belangrijkste symptomen van het ziektebeeld;</li>
-                                <li><i class="fas fa-check-circle"></i>De gevolgen van het ziektebeeld;</li>
-                                <li><i class="fas fa-check-circle"></i>De behandeling van een CVA;</li>
-                                <li><i class="fas fa-check-circle"></i>Tips voor de omgang met mensen die een CVA hebben doorgemaakt;</li>
-                                <li><i class="fas fa-check-circle"></i>Tips en aandachtspunten voor de zorgverlening;</li>
-                                <li><i class="fas fa-check-circle"></i>Tips voor cliënten en hun omgeving.</li>
-                            </ul>
-                            <p>Bovenstaande onderwerpen worden behandeld in een e-learning met informatie, beeldmateriaal, filmpjes, oefeningen en een eindtoets. De kennisapp bestaat uit meerkeuzevragen waarmee je wordt uitgedaagd om te laten zien hoeveel je weet over het thema.</p>
-                        </div>
-                    </div>
-
-                    <div id="voor-wie" data-tab-content>
-                        <div class="column tab-content">
-                            <p>
-                                Kenniscollect is geschikt voor helpenden (<b>niveau 2</b>) en zorgprofessionals (<b>niveau 3</b>) werkzaam in een zorginstellingen of de thuiszorg.
-                            </p>
-                            <p>
-                                Omdat wij van mening zijn dat <b>mantelzorgers</b> een belangrijke bijdrage leveren aan goede zorg, stellen wij onze kenniscollectie via jullie zorginstelling gratis beschikbaar aan de mantelzorgers.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div id="extra-info" data-tab-content>
-                        <div class="column tab-content">
-                            <p>De kenniscollectie <em>CVA</em> bestaat uit twee onderdelen.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>In de <strong>e-learning</strong> leer je de belangrijkste informatie over CVA. Je sluit de e-learning af met een eindtoets, waarmee je jouw certificaat kunt behalen.</li>
-                                <li><i class="fas fa-check-circle"></i>Daarnaast krijg je toegang tot de speciale <strong>Next Level App</strong>. Hiermee kun je jouw kennis over CVA goed op peil houden. Een paar keer per maand stuurt de app een korte kennisvraag naar je smartphone. Heb je de vraag goed? Dan scoor je punten. Heb je de vraag fout? Dan komt de vraag op een later moment terug. Een leuke en gemakkelijke manier om te blijven oefenen met de lesstof.</li>
-                            </ul>
-                            <p>Kenniscollect is een geaccrediteerde leermethode waarmee je na succesvolle afronding <strong>accreditatiepunten</strong> voor het kwaliteitsregister V&V/V&VN verdient.</p>
-                        </div>
-                    </div>
-
-                    <div id="kosten" data-tab-content>
-                        <div class="column tab-content">
-                            <p>De kosten voor Kenniscollect zijn afhankelijk van de grootte van de organisatie. Je koopt een totaalpakket voor de gehele organisatie en mantelzorgers.</p>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i>Grote organisaties: &gt;500 medewerkers –&gt; €600 per maand</li>
-                                <li><i class="fas fa-check-circle"></i>Midden organisaties (200-500) medewerkers –&gt;€</span>400 per maand</li>
-                                <li><i class="fas fa-check-circle"></i>Kleine organisaties (&lt;200) medewerkers –&gt;€</span>200 per maand</li>
-                            </ul>
-                            <p>Kenniscollect is ook individueel te koop voor €37,50 per niveau (e-learning + kennisapp).</p>
-                        </div>
+    <main>
+        <div class="container">
+            <section id="home">
+                <div class="row">
+                    <div class="column text-column">
+                        <h2>Kenniscollect, kies de leermethode die bij jou past</h2>
+                        <p>Met Kenniscollect kunnen medewerkers op verschillende manieren de kennis over allerlei onderwerpen naar een hoger plan tillen. Onze kenniscollectie bestaat uit diverse thema’s, met elk een e-learning en een kennisapp. Deze zijn gemaakt voor helpenden niveau 2 en verzorgenden niveau 3. Kenniscollect is ook geschikt voor stagiaires en mantelzorgers.</p>
+                        <p>E-learning spreekt voor zich. De kennisapp heeft wellicht wat introductie nodig. Met korte oefenvragen wordt op een leuke, afwisselende en effectieve manier in een paar minuten per week de kennis vergroot en behouden. In ieders eigen tempo, op het moment dat het hen uitkomt.</p>
+                        <p>Het voordeel van Kenniscollect is dat iedere medewerker zelf kan kiezen op welke manier hij of zij wil leren. Via een e-learning of via een app, men kan zelf kiezen welke methode het beste past. Medewerkers zijn hierdoor flexibel en kunnen zelfs per thema een leermethodiek kiezen. Plezier en gemak staan hierbij voorop, wat automatisch leidt tot een goed resultaat.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="cva">
-            <div class="row">
-                <div class="columns fullwidth">
-                    <div class="column">
-                        <h2>Leer CVA kennen met e-learning én een app</h2>
+                <div class="row">
+                    <div class="column text-column">
+                        <h2>Wat leer je met de kenniscollectie CVA?</h2>
+                        <p>Gemiddeld krijgen meer dan honderd mensen per dag te maken met een CVA. Een beroerte kan grote gevolgen hebben voor iemands leven. Hoe sneller zorg kan worden verleend, hoe sneller de schade in de hersenen kan worden beperkt. Daarom is het belangrijk dat jij als zorgverlener in een zorginstelling of de thuiszorg het ziektebeeld kent en snel kunt herkennen.</p>
+                        <p>Met de kenniscollectie CVA leer je alles wat jij moet weten over een beroerte. Je leert hoe een CVA ontstaat en welke risicofactoren er zijn. Je leert aan welke symptomen je een CVA herkent, welke gevolgen een CVA heeft en welke behandelmethodes er zijn. Ook ken je belangrijkste aandachtspunten voor de zorgverlening bij mensen die een CVA hebben doorgemaakt. Zo is jouw kennis over dit ziektebeeld weer helemaal up-to-date.</p>
+                        <p>Via de e-learning of de app vergroot en versterk je de kennis die jij als zorgverlener nodig hebt om de beste zorg voor mensen met een CVA te verlenen.</p>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <img src="images/cursus-elearning.png" alt="" srcset="" width="600">
+            </section>
+            <section id="waarom">
+                <div class="row">
+                    <div class="column img-column">
+                        <img src="images/voordelen.png" alt="" srcset="">
                     </div>
-                    <div class="column">
-                        <h2>Kenmerken van de e-learning</h2>
+                    <div class="column text-column">
+                        <h2>Waarom Kenniscollect</h2>
                         <ul>
-                            <li><i class="fas fa-check-square"></i>Alles over de oorzaken, symptomen en gevolgen van een CVA;</li>
-                            <li><i class="fas fa-check-square"></i>Beschikbaar voor zowel niveau 2 als niveau 3;</li>
-                            <li><i class="fas fa-check-square"></i>Interactief en afwisselend met ofenvragen, kennisquizzen en testjes;</li>
-                            <li><i class="fas fa-check-square"></i>Eindtoets om certificaat te behalen.</li>
+                            <li><i class="fas fa-check-square"></i>Interactieve en uitdagende scholing;</li>
+                            <li><i class="fas fa-check-square"></i>Oefenvragen en kennisgames tijden de cursus;</li>
+                            <li><i class="fas fa-check-square"></i>Beschikbaar voor niveau 2 en 3;</li>
+                            <li><i class="fas fa-check-square"></i>Sluit aan op de dagelijkse praktijk van jou als zorgverlener;</li>
+                            <li><i class="fas fa-check-square"></i>Combinatie van e-learning én kennis bijhouden via onze speciale leerapp;</li>
+                            <li><i class="fas fa-check-square"></i>Certificaat direct na afronden beschikbaar.</li>
                         </ul>
-                        <a href="#informatie" class="button">Informatie</a>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="column">
-                        <h2>Kenmerken van de Next Level App</h2>
-                        <ul>
-                            <li><i class="fas fa-check-square"></i>Regelmatig korte kennisvragen over het ziektebeeld CVA;</li>
-                            <li><i class="fas fa-check-square"></i>In een paar minuten je kennis testen en verbeteren;</li>
-                            <li><i class="fas fa-check-square"></i>Leuk en gemakkelijk in gebruik;</li>
-                            <li><i class="fas fa-check-square"></i>Beschikbaar voor zowel niveau 2 en niveau 3.</li>
+            </section>
+            <section id="tabs">
+                <div class="row">
+                    <div class="tab-navbar">
+                        <ul class="tab-menu">
+                            <li class="tab-menu-item active" data-tab-target="#inhoud">Inhoud</li>
+                            <li class="tab-menu-item" data-tab-target="#voor-wie">Voor wie?</li>
+                            <li class="tab-menu-item" data-tab-target="#extra-info">Extra info</li>
+                            <li class="tab-menu-item" data-tab-target="#kosten">Kosten</li>
                         </ul>
+                    </div>
+                    <div class="tab-contents">
+                        <div id="inhoud" class=" active" data-tab-content>
+                            <div class="column tab-content">
+                                <p>De kenniscollectie <i>CVA</i> behandelt de volgende onderwerpen:</p>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Oorzaken van een CVA;</li>
+                                    <li><i class="fas fa-check-circle"></i>Risicofactoren</li>
+                                    <li><i class="fas fa-check-circle"></i>De belangrijkste symptomen van het ziektebeeld;</li>
+                                    <li><i class="fas fa-check-circle"></i>De gevolgen van het ziektebeeld;</li>
+                                    <li><i class="fas fa-check-circle"></i>De behandeling van een CVA;</li>
+                                    <li><i class="fas fa-check-circle"></i>Tips voor de omgang met mensen die een CVA hebben doorgemaakt;</li>
+                                    <li><i class="fas fa-check-circle"></i>Tips en aandachtspunten voor de zorgverlening;</li>
+                                    <li><i class="fas fa-check-circle"></i>Tips voor cliënten en hun omgeving.</li>
+                                </ul>
+                                <p>Bovenstaande onderwerpen worden behandeld in een e-learning met informatie, beeldmateriaal, filmpjes, oefeningen en een eindtoets. De kennisapp bestaat uit meerkeuzevragen waarmee je wordt uitgedaagd om te laten zien hoeveel je weet over het thema.</p>
+                            </div>
+                        </div>
+
+                        <div id="voor-wie" data-tab-content>
+                            <div class="column tab-content">
+                                <p>
+                                    Kenniscollect is geschikt voor helpenden (<b>niveau 2</b>) en zorgprofessionals (<b>niveau 3</b>) werkzaam in een zorginstellingen of de thuiszorg.
+                                </p>
+                                <p>
+                                    Omdat wij van mening zijn dat <b>mantelzorgers</b> een belangrijke bijdrage leveren aan goede zorg, stellen wij onze kenniscollectie via jullie zorginstelling gratis beschikbaar aan de mantelzorgers.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="extra-info" data-tab-content>
+                            <div class="column tab-content">
+                                <p>De kenniscollectie <em>CVA</em> bestaat uit twee onderdelen.</p>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>In de <strong>e-learning</strong> leer je de belangrijkste informatie over CVA. Je sluit de e-learning af met een eindtoets, waarmee je jouw certificaat kunt behalen.</li>
+                                    <li><i class="fas fa-check-circle"></i>Daarnaast krijg je toegang tot de speciale <strong>Next Level App</strong>. Hiermee kun je jouw kennis over CVA goed op peil houden. Een paar keer per maand stuurt de app een korte kennisvraag naar je smartphone. Heb je de vraag goed? Dan scoor je punten. Heb je de vraag fout? Dan komt de vraag op een later moment terug. Een leuke en gemakkelijke manier om te blijven oefenen met de lesstof.</li>
+                                </ul>
+                                <p>Kenniscollect is een geaccrediteerde leermethode waarmee je na succesvolle afronding <strong>accreditatiepunten</strong> voor het kwaliteitsregister V&V/V&VN verdient.</p>
+                            </div>
+                        </div>
+
+                        <div id="kosten" data-tab-content>
+                            <div class="column tab-content">
+                                <p>De kosten voor Kenniscollect zijn afhankelijk van de grootte van de organisatie. Je koopt een totaalpakket voor de gehele organisatie en mantelzorgers.</p>
+                                <ul>
+                                    <li><i class="fas fa-check-circle"></i>Grote organisaties: &gt;500 medewerkers –&gt; €600 per maand</li>
+                                    <li><i class="fas fa-check-circle"></i>Midden organisaties (200-500) medewerkers –&gt;€</span>400 per maand</li>
+                                    <li><i class="fas fa-check-circle"></i>Kleine organisaties (&lt;200) medewerkers –&gt;€</span>200 per maand</li>
+                                </ul>
+                                <p>Kenniscollect is ook individueel te koop voor €37,50 per niveau (e-learning + kennisapp).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cva">
+                <div class="row">
+                    <div class="columns fullwidth">
+                        <div class="column">
+                            <h2>Leer CVA kennen met e-learning én een app</h2>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column img-column">
+                            <img src="images/cursus-elearning.png" alt="" srcset="" width="600">
+                        </div>
+                        <div class="column">
+                            <h2>Kenmerken van de e-learning</h2>
+                            <ul>
+                                <li><i class="fas fa-check-square"></i>Alles over de oorzaken, symptomen en gevolgen van een CVA;</li>
+                                <li><i class="fas fa-check-square"></i>Beschikbaar voor zowel niveau 2 als niveau 3;</li>
+                                <li><i class="fas fa-check-square"></i>Interactief en afwisselend met ofenvragen, kennisquizzen en testjes;</li>
+                                <li><i class="fas fa-check-square"></i>Eindtoets om certificaat te behalen.</li>
+                            </ul>
                             <a href="#informatie" class="button">Informatie</a>
+                        </div>
                     </div>
-                    <div class="column">
-                        <img src="images/NLA gif.gif" alt="" srcset="" width="600">
+                    <div class="columns">
+                        <div class="column">
+                            <h2>Kenmerken van de Next Level App</h2>
+                            <ul>
+                                <li><i class="fas fa-check-square"></i>Regelmatig korte kennisvragen over het ziektebeeld CVA;</li>
+                                <li><i class="fas fa-check-square"></i>In een paar minuten je kennis testen en verbeteren;</li>
+                                <li><i class="fas fa-check-square"></i>Leuk en gemakkelijk in gebruik;</li>
+                                <li><i class="fas fa-check-square"></i>Beschikbaar voor zowel niveau 2 en niveau 3.</li>
+                            </ul>
+                                <a href="#informatie" class="button">Informatie</a>
+                        </div>
+                        <div class="column">
+                            <img src="images/NLA gif.gif" alt="" srcset="" width="600">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="informatie">
-            <div class="row">
-                <div class="columns fullwidth">
-                    <div class="column">
-                        <h2>Informatie aanvragen</h2>
+            </section>
+            <section id="informatie">
+                <div class="row">
+                    <div class="columns fullwidth">
+                        <div class="column">
+                            <h2>Informatie aanvragen</h2>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <form action="https://formspree.io/f/xzbyqzyk" method="POST" class="formulier">
+                            <div class="form-row">
+                                <input type="text" name="Voornaam" id="voornaam" placeholder="Voornaam">
+                                <input type="text" name="Achternaam" id="achternaam" placeholder="Achternaam">
+                            </div>
+                            <div class="form-row">
+                                <input type="email" name="Emailadres" id="emailadres" placeholder="E-mailadres">
+                                <input type="tel" name="Telefoon" id="telefoon" placeholder="Telefoon">
+                            </div>
+                            <div class="form-row">
+                                <input type="text" name="organisatie" id="organisatie" placeholder="Organisatie">
+                                <select name="Ik wil graag" id="ik-wil-graag" required="">
+                                    <option value="selecteer" selected="" disabled="">Selecteer</option>
+                                    <option value="mij aanmelden">mij aanmelden</option>
+                                    <option value="een demo ontvangen">een demo ontvangen</option>
+                                    <option value="gebeld worden">gebeld worden</option>
+                                </select>
+                            </div>
+                            <input type="hidden" name="_subject" id="email-subject" value="Informatie aanvragen CVA">
+                            <input type="submit" value="Versturen">
+                        </form>
                     </div>
                 </div>
-                <div class="columns">
-                    <div class="formulier">
-                        <div class="form-row">
-                            <input type="text" placeholder="Voornaam">
-                            <input type="text" placeholder="Achternaam">
-                        </div>
-                        <div class="form-row">
-                            <input type="email" placeholder="E-mailadres">
-                            <input type="tel" name="" id="" placeholder="Telefoon">
-                        </div>
-                        <div class="form-row">
-                            <input type="text" name="" id="" placeholder="Organisatie">
-                        </div>
-                        <button type="submit">Versturen</button>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="tvosolutions">
-            <div class="row">
-                <div class="columns">
-                    <div class="column">
-                        <h2>Powered by: </h2>
-                        <img src="images/logo-tvo.png" alt="" srcset="" width="300">
+            <section id="tvosolutions">
+                <div class="row">
+                    <div class="columns">
+                        <div class="column">
+                            <h2>Powered by: </h2>
+                            <img src="images/logo-tvo.png" alt="" srcset="" width="300">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
